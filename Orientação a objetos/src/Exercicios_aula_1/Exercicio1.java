@@ -1,11 +1,12 @@
-package Exercicios;
+package Exercicios_aula_1;
 
-import Metodos.Funcionario;
+import Metodos_aula_1.Funcionario;
 
 import java.util.Scanner;
 
 public class Exercicio1 {
     public static void main(String[] args) {
+        //variaveis
         Scanner scan = new Scanner(System.in);
         String nome;
         String sobreNome;
@@ -16,6 +17,7 @@ public class Exercicio1 {
         int escolha = 0;
         float valor;
 
+        //lendo variaveis
         System.out.println("Digite o nome:");
         nome = scan.nextLine();
         System.out.println("Digite o sobrenome");
@@ -29,12 +31,19 @@ public class Exercicio1 {
         System.out.println("Digite o valor da hora trabalhada:");
         valorHora = scan.nextFloat();
 
+        //criando o funcionario da classe funcionario, utilizando o construtor com valores
         Funcionario funcionario1 = new Funcionario(nome, sobreNome, cidade, estado, horasTrabalhadas, valorHora);
 
+        //usando o metodo para retornar o nome
         funcionario1.retornaNome();
+
+        //while para fechar o programa quando escolher 4
         while(escolha != 4) {
+            //Printando opções para o usuário e lendo escolha
             System.out.println("Digite 1 para incrementar a quantidades de horas digitas \nDigite 2 para substituir o valor da hora do funcionario \nDigite 3 para calcular o valor do salario funcionario\nDigite 4 para sair");
             escolha = scan.nextInt();
+
+            //if's conforme escolha, puxando o metodo correspondente.
             if (escolha == 1) {
                 System.out.println("Digite o número de horas para incrementar:");
                 valor = scan.nextFloat();
