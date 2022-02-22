@@ -1,4 +1,4 @@
-package Metodos_aula_2;
+package Aula_2.Metodos_aula_2;
 
 public class Pessoa {
     //Atributos

@@ -1,5 +1,5 @@
-package Exercicios_aula_2;
-import Metodos_aula_2.Operario;
+package Aula_2.Exercicios_aula_2;
+import Aula_2.Metodos_aula_2.Operario;
 import java.util.Scanner;
 
 public class ExercicioOperario {

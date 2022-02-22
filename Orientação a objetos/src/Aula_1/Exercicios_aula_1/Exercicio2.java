@@ -1,6 +1,6 @@
-package Exercicios_aula_1;
+package Aula_1.Exercicios_aula_1;
 
-import Metodos_aula_1.Livro;
+import Aula_1.Metodos_aula_1.Livro;
 
 import java.util.Scanner;
 

@@ -1,6 +1,5 @@
-package Exercicios_aula_2;
-import Metodos_aula_2.Operario;
-import Metodos_aula_2.Vendedor;
+package Aula_2.Exercicios_aula_2;
+import Aula_2.Metodos_aula_2.Vendedor;
 
 import java.util.Scanner;
 
