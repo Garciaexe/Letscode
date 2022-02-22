@@ -5,7 +5,6 @@ public class Empregado extends Pessoa{
     private int codigoSetor;
     private float salarioBase;
     private float impostoRetido;
-    private float valorPorcentagem;
     private float salario;
 
     //Getter's
@@ -18,7 +17,6 @@ public class Empregado extends Pessoa{
     public float getImpostoRetido() {
         return impostoRetido;
     }
-    public float getValorPorcentagem() { return valorPorcentagem; }
     public float getSalario() {  return salario; }
 
     //Setter's
@@ -31,13 +29,11 @@ public class Empregado extends Pessoa{
     public void setImpostoRetido(float impostoRetido) {
         this.impostoRetido = impostoRetido;
     }
-    public void setValorPorcentagem(float valorPorcentagem) { this.valorPorcentagem = valorPorcentagem; }
     public void setSalario(float salario) { this.salario = salario; }
 
     //Metodo para calcular salario
     public void calcularSalario(){
-        this.valorPorcentagem = (this.salarioBase / 100) * this.impostoRetido;
-        this.salario = this.salarioBase - this.valorPorcentagem;
+        this.salario = this.salarioBase - ((this.salarioBase / 100) * this.impostoRetido);
         System.out.println("O salario do empregado " + this.getNome() + " é: " + this.salario);
     }
 }
