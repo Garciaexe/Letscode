@@ -1,7 +1,5 @@
 package Exercicios_aula_2;
-
 import Metodos_aula_2.Administrador;
-
 import java.util.Scanner;
 
 public class ExercicioAdministrador {

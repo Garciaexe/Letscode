@@ -1,7 +1,5 @@
 package Exercicios_aula_2;
-
 import Metodos_aula_2.Fornecedor;
-
 import java.util.Scanner;
 
 public class ExercicioFornecedor {
@@ -32,7 +30,7 @@ public class ExercicioFornecedor {
         fornecedor1.setEndereco(endereco);
         fornecedor1.setTelefone(telefone);
 
-        //Aplicando metodo para obter saldo
+        //metodo
         fornecedor1.obterSaldo();
     }
 }

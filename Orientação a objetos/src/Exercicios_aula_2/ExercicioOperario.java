@@ -1,7 +1,5 @@
 package Exercicios_aula_2;
-
 import Metodos_aula_2.Operario;
-
 import java.util.Scanner;
 
 public class ExercicioOperario {

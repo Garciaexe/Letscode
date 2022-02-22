@@ -18,6 +18,6 @@ public class Administrador extends Empregado {
     @Override
     public void calcularSalario() {
         setSalario((getSalarioBase() - ((getSalarioBase()/100) * getImpostoRetido())) + this.ajudaCusto);
-        System.out.println("O salario do empregado " + this.getNome() + " é: " + getSalario());
+        System.out.println("O salario do empregado " + getNome() + " é: " + getSalario());
     }
 }

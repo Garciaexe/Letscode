@@ -12,7 +12,7 @@ public class Fornecedor extends Pessoa{
         this.valorDivida = valorDivida;
     }
 
-    //Getter's
+    //Getters
     public float getValorCredito() {
         return valorCredito;
     }
@@ -21,7 +21,7 @@ public class Fornecedor extends Pessoa{
         return valorDivida;
     }
 
-    //Setter's
+    //Setters
     public void setValorCredito(float valorCredito) {
         this.valorCredito = valorCredito;
     }
@@ -33,6 +33,6 @@ public class Fornecedor extends Pessoa{
     //Metodo para obter saldo
     public void obterSaldo(){
         this.saldo = this.valorCredito - this.valorDivida;
-        System.out.println("O saldo do fornecedor " +this.getNome() + " é: " +this.saldo );
+        System.out.println("O saldo do fornecedor " + getNome() + " é: " +this.saldo );
     }
 }
