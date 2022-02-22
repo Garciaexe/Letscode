@@ -4,6 +4,13 @@ public class Fornecedor extends Pessoa{
     //atributos
     private float valorCredito;
     private float valorDivida;
+    private float saldo;
+
+    //Construtor
+    public Fornecedor(float valorCredito, float valorDivida){
+        this.valorCredito = valorCredito;
+        this.valorDivida = valorDivida;
+    }
 
     //Getter's
     public float getValorCredito() {
@@ -23,8 +30,9 @@ public class Fornecedor extends Pessoa{
         this.valorDivida = valorDivida;
     }
 
-    public void obterSaldo(float saldo){
+    //Metodo para obter saldo
+    public void obterSaldo(){
         saldo = this.valorCredito - valorDivida;
-        System.out.println("Saldo: " +saldo );
+        System.out.println("O saldo do fornecedor " +this.getNome() + " é: " +this.saldo );
     }
 }
