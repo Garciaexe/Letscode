@@ -32,7 +32,7 @@ public class Fornecedor extends Pessoa{
 
     //Metodo para obter saldo
     public void obterSaldo(){
-        saldo = this.valorCredito - valorDivida;
+        this.saldo = this.valorCredito - this.valorDivida;
         System.out.println("O saldo do fornecedor " +this.getNome() + " é: " +this.saldo );
     }
 }
