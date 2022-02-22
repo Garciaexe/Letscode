@@ -14,6 +14,7 @@ public class Administrador extends Empregado {
         this.ajudaCusto = ajudaCusto;
     }
 
+    //metodo para calcular salario
     @Override
     public void calcularSalario() {
         setSalario((getSalarioBase() - ((getSalarioBase()/100) * getImpostoRetido())) + this.ajudaCusto);
