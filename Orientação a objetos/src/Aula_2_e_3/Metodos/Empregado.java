@@ -56,22 +56,19 @@ public class Empregado extends Pessoa{
         if (this.codigoSetor == 1) {
             this.salarioBase += ((this.salarioBase / 100) * 5);
             this.salario = this.salarioBase - ((this.salarioBase / 100) * this.impostoRetido);
-            System.out.println("O salario do empregado " + getNome() + " é: " + this.salario);
         }
         if (this.codigoSetor == 2){
             this.salarioBase += ((this.salarioBase / 100) * 10);
             this.salario = this.salarioBase - ((this.salarioBase / 100) * this.impostoRetido);
-            System.out.println("O salario do empregado " + getNome() + " é: " + this.salario);
         }
         if (this.codigoSetor == 3){
             this.salarioBase += ((this.salarioBase / 100) * 20);
             this.salario = this.salarioBase - ((this.salarioBase / 100) * this.impostoRetido);
-            System.out.println("O salario do empregado " + getNome() + " é: " + this.salario);
         }
         if(this.codigoSetor < 1 || this.codigoSetor > 3){
             System.out.println("Codigo inválido, o salário será calculado sem acressimo");
             this.salario = this.salarioBase - ((this.salarioBase / 100) * this.impostoRetido);
-            System.out.println("O salario do empregado " + getNome() + " é: " + this.salario);
         }
+        System.out.println("O salario do empregado " + getNome() + " é: " + this.salario);
     }
 }
