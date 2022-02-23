@@ -28,7 +28,7 @@ public class Empregado extends Pessoa{
     //Polimofismo de sobreposição, pois estou sobrepondo o toString da classe pessoa.
     @Override
     public String toString() {
-        return "Pessoa{" +
+        return "Empregado{" +
                 "nome='" + getNome() + '\'' +
                 ", endereco='" + getEndereco() + '\'' +
                 ", telefone='" + getTelefone() + '\'' +

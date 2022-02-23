@@ -16,7 +16,7 @@ public class Pessoa {
         this.telefone = telefone;
     }
 
-    //Polimofismo de sobreposição, sobrepondo o metodo default.
+    //Polimofismo de sobreposição, sobrepondo o metodo default da classe object.
     @Override
     public String toString() {
         return "Pessoa{" +
