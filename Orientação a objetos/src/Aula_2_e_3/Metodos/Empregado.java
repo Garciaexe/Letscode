@@ -54,17 +54,17 @@ public class Empregado extends Pessoa{
     //Não vi oportunidade de usar polimorfismo
     public void calcularSalario() {
         if (this.codigoSetor == 1) {
-            salarioBase += salarioBase + ((salarioBase / 100) * 5);
+            this.salarioBase += ((this.salarioBase / 100) * 5);
             this.salario = this.salarioBase - ((this.salarioBase / 100) * this.impostoRetido);
             System.out.println("O salario do empregado " + getNome() + " é: " + this.salario);
         }
         if (this.codigoSetor == 2){
-            salarioBase += salarioBase + ((salarioBase / 100) * 10);
+            this.salarioBase += ((this.salarioBase / 100) * 10);
             this.salario = this.salarioBase - ((this.salarioBase / 100) * this.impostoRetido);
             System.out.println("O salario do empregado " + getNome() + " é: " + this.salario);
         }
         if (this.codigoSetor == 3){
-            salarioBase += salarioBase + ((salarioBase / 100) * 20);
+            this.salarioBase += ((this.salarioBase / 100) * 20);
             this.salario = this.salarioBase - ((this.salarioBase / 100) * this.impostoRetido);
             System.out.println("O salario do empregado " + getNome() + " é: " + this.salario);
         }

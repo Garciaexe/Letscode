@@ -5,7 +5,7 @@ public class ExercicioEmpregado {
     public static void main(String[] args) {
 
         //Estanciando empregado
-        Empregado empregado1 = new Empregado("Joao", "Rua x", "33221133", 4, 2000, 5);
+        Empregado empregado1 = new Empregado("Joao", "Rua x", "33221133", 3, 2000, 5);
 
         //Aplicando toString
         System.out.println(empregado1);
