@@ -1,4 +1,4 @@
-package Aula_2_e_3.Metodos;
+package Exercicio_Empregado.Metodos;
 
 public class Fornecedor extends Pessoa{
     //atributos

@@ -1,6 +1,6 @@
-package Aula_2_e_3.Metodos;
+package Exercicio_Empregado.Metodos;
 
-import Enums.TipoJornadaEmpregado;
+import Exercicio_Empregado.Enums.TipoJornadaEmpregado;
 
 public class Empregado extends Pessoa{
     //Atributos, vou usar o construtor default.

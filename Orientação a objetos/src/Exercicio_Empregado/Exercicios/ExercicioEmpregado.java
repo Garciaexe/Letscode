@@ -1,6 +1,6 @@
-package Aula_2_e_3.Exercicios;
-import Aula_2_e_3.Metodos.Empregado;
-import Enums.TipoJornadaEmpregado;
+package Exercicio_Empregado.Exercicios;
+import Exercicio_Empregado.Metodos.Empregado;
+import Exercicio_Empregado.Enums.TipoJornadaEmpregado;
 
 public class ExercicioEmpregado {
     public static void main(String[] args) {

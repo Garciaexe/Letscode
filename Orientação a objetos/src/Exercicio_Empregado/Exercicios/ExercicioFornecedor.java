@@ -1,5 +1,5 @@
-package Aula_2_e_3.Exercicios;
-import Aula_2_e_3.Metodos.Fornecedor;
+package Exercicio_Empregado.Exercicios;
+import Exercicio_Empregado.Metodos.Fornecedor;
 
 public class ExercicioFornecedor {
     public static void main(String[] args) {

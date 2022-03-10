@@ -1,5 +1,5 @@
-package Aula_2_e_3.Exercicios;
-import Aula_2_e_3.Metodos.Administrador;
+package Exercicio_Empregado.Exercicios;
+import Exercicio_Empregado.Metodos.Administrador;
 import java.util.Scanner;
 
 public class ExercicioAdministrador {
