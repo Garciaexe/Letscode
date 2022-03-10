@@ -1,29 +1,29 @@
 package Aula_2_e_3.Metodos;
 
+import Enums.TipoJornadaEmpregado;
+
 public class Empregado extends Pessoa{
     //Atributos, vou usar o construtor default.
     private int codigoSetor;
     private float salarioBase;
     private float impostoRetido;
     private float salario;
+    TipoJornadaEmpregado tipoJornadaEnum;
 
     //Construtor default
     public Empregado(){}
 
-    //Construtor para ser utilizado nas classes filhas
-    public Empregado(int codigoSetor, int salarioBase, int impostoRetido){
-        this.codigoSetor = codigoSetor;
-        this.salarioBase = salarioBase;
-        this.impostoRetido = impostoRetido;
-    }
 
     //Construtor
-    public Empregado(String nome, String endereco, String telefone, int codigoSetor, float salarioBase, float impostoRetido){
+    public Empregado(String nome, String endereco, String telefone, float salarioBase, float impostoRetido, int codigoSetor, TipoJornadaEmpregado tipoJornadaEnum){
         super(nome,endereco,telefone);
-        this.codigoSetor = codigoSetor;
         this.salarioBase = salarioBase;
         this.impostoRetido = impostoRetido;
+        this.codigoSetor = codigoSetor;
+        this.tipoJornadaEnum = tipoJornadaEnum;
     }
+
+
 
     //Polimofismo de sobreposição, pois estou sobrepondo o toString da classe pessoa.
     @Override
@@ -32,9 +32,10 @@ public class Empregado extends Pessoa{
                 "nome='" + getNome() + '\'' +
                 ", endereco='" + getEndereco() + '\'' +
                 ", telefone='" + getTelefone() + '\'' +
-                ", codigoSetor ='" + codigoSetor + '\'' +
                 ", salarioBase =' " + salarioBase + '\'' +
                 ", impostoRetido =' " + impostoRetido + '\'' +
+                ", codigoSetor ='" + codigoSetor + '\'' +
+                ", tipoJornada ='" + tipoJornadaEnum + '\'' +
                 '}';
     }
 
