@@ -13,6 +13,5 @@ public class ExercicioEmpregado {
 
         //Aplicando metodo de calculo do salario
         empregado1.calcularSalario();
-
     }
 }
