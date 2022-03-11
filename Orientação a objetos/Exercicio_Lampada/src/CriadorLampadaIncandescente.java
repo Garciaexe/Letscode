@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CriadorLampadaFlourescente {
+public class CriadorLampadaIncandescente {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         LampadaFluorescente lampada = new LampadaFluorescente();
