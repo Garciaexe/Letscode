@@ -11,11 +11,6 @@ public class TaxaEntrega implements TaxaDeEntrega {
 
     @Override
     public void taxaEntrega(int tipotaxa, int quantidade) {
-        if(tipotaxa == 1){
             this.taxa += tipotaxa * quantidade;
-        }
-        if(tipotaxa == 2){
-            this.taxa += tipotaxa * quantidade;
-        }
     }
 }
