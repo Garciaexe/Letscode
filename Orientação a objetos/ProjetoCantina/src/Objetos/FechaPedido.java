@@ -2,7 +2,7 @@ package Objetos;
 
 
 public class FechaPedido extends AdicionaItem{
-    int total;
+    private int total;
 
     public void comanda(){
         System.out.println("\nSegue seu pedido:");
