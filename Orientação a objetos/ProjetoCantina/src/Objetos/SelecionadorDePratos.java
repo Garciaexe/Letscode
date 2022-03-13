@@ -1,6 +1,6 @@
 package Objetos;
 
-import Interfaces.TaxaDeEntrega;
+import Exceptions.ItemInexistenteException;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class SelecionadorDePratos extends FechaPedido {
     private int valor;
 
     //Selecionador de pratos
-    public void Selecionador(){
+    public void Selecionador() throws ItemInexistenteException {
         System.out.println("\nDigite o nome do item desejado:");
         this.item = scan.nextLine().toLowerCase();
         System.out.println("Digite a quantidade desejada:");
@@ -90,8 +90,7 @@ public class SelecionadorDePratos extends FechaPedido {
                 taxaEntrega(1, this.quantidade);
                 contador += 1;
                 break;
-            default:
-                System.out.println("Item inexistente");
+            default: throw new ItemInexistenteException("Item não encontrado");
         }
     }
 }

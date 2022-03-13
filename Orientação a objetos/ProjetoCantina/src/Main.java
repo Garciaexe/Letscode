@@ -1,8 +1,9 @@
+import Exceptions.ItemInexistenteException;
 import Objetos.Menu;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ItemInexistenteException {
         Scanner scan = new Scanner(System.in);
         int opcao = 3;
         Menu menu = new Menu();
