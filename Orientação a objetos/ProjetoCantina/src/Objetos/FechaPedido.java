@@ -1,13 +1,13 @@
 package Objetos;
 
-import java.util.ArrayList;
 
 public class FechaPedido extends AdicionaItem{
+    int total;
 
     public void comanda(){
         System.out.println("\nSegue seu pedido:");
-       for(int i = 0; i < this.contador; i++){
-           System.out.println(this.quantidadeItem.get(i) + " - " + this.itens.get(i) + " " + this.valores.get(i) + "$");
+       for(int i = 0; i < getContador(); i++){
+           System.out.println(this.quantidadeItem.get(i) + " - " + itens.get(i) + " " + valores.get(i) + "$");
            this.total += this.valores.get(i);
         }
 
