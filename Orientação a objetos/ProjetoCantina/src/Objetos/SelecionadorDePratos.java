@@ -19,76 +19,31 @@ public class SelecionadorDePratos extends FechaPedido {
         scan.nextLine();
         switch(this.item){
             case "burguer":
-                itens.add(item);
-                quantidadeItem.add(this.quantidade);
-                this.quantidade = 30 * this.quantidade;
-                valores.add(this.quantidade);
-                taxaEntrega(1, this.quantidade);
-                contador += 1;
+                adicionaItem(this.item, this.quantidade, 30, 1);
                 break;
             case "pizza":
-                itens.add(item);
-                quantidadeItem.add(this.quantidade);
-                this.valor = 45 * this.quantidade;
-                valores.add(this.valor);
-                taxaEntrega(1, this.quantidade);
-                contador += 1;
+                adicionaItem(this.item, this.quantidade, 45, 1);
                 break;
             case "fogazza":
-                itens.add(item);
-                quantidadeItem.add(this.quantidade);
-                this.valor = 20 * this.quantidade;
-                valores.add(this.valor);
-                taxaEntrega(1, this.quantidade);
-                contador += 1;
+                adicionaItem(this.item, this.quantidade, 20, 1);
                 break;
             case "pasta":
-                itens.add(item);
-                quantidadeItem.add(this.quantidade);
-                this.valor = 30 * this.quantidade;
-                valores.add(this.valor);
-                taxaEntrega(2, this.quantidade);
-                contador += 1;
+                adicionaItem(this.item, this.quantidade, 30, 2);
                 break;
             case "lasanha":
-                itens.add(item);
-                quantidadeItem.add(this.quantidade);
-                this.valor = 70 * this.quantidade;
-                valores.add(this.valor);
-                taxaEntrega(2, this.quantidade);
-                contador += 1;
+                adicionaItem(this.item, this.quantidade, 70, 2);
                 break;
             case "polpetone":
-                itens.add(item);
-                quantidadeItem.add(this.quantidade);
-                this.valor = 50 * this.quantidade;
-                valores.add(this.valor);
-                taxaEntrega(2, this.quantidade);
-                contador += 1;
+                adicionaItem(this.item, this.quantidade, 50, 2);
                 break;
             case "refrigerante":
-                itens.add(item);
-                quantidadeItem.add(this.quantidade);
-                this.valor = 5 * this.quantidade;
-                valores.add(this.valor);
-                taxaEntrega(1, this.quantidade);
-                contador += 1;
+                adicionaItem(this.item, this.quantidade, 5, 1);
                 break;
             case "suco":
-                itens.add(item);
-                quantidadeItem.add(this.quantidade);
-                this.valor = 7 * this.quantidade;
-                valores.add(this.valor);
-                taxaEntrega(1, this.quantidade);
-                contador += 1;
+                adicionaItem(this.item, this.quantidade, 7, 1);
                 break;
             case "vinho":
-                itens.add(item);
-                quantidadeItem.add(this.quantidade);
-                this.valor = 50 * this.quantidade;
-                valores.add(this.valor);
-                taxaEntrega(1, this.quantidade);
-                contador += 1;
+                adicionaItem(this.item, this.quantidade, 50, 1);
                 break;
             default: throw new ItemInexistenteException("Item não encontrado");
         }

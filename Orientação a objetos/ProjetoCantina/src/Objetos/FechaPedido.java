@@ -2,12 +2,7 @@ package Objetos;
 
 import java.util.ArrayList;
 
-public class FechaPedido extends TaxaEntrega{
-    ArrayList<String> itens = new ArrayList<>();
-    ArrayList<Integer> valores = new ArrayList<>();
-    ArrayList<Integer> quantidadeItem = new ArrayList<>();
-    int contador;
-    int total;
+public class FechaPedido extends AdicionaItem{
 
     public void comanda(){
         System.out.println("\nSegue seu pedido:");
