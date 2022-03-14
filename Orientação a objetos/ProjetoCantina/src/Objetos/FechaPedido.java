@@ -5,7 +5,7 @@ public class FechaPedido extends AdicionaItem{
     private int total;
 
     public void comanda(){
-        System.out.println("\nSegue seu pedido:");
+        System.out.println("\nSegue seu pedido:\n");
        for(int i = 0; i < getContador(); i++){
            System.out.println(this.quantidadeItem.get(i) + " - " + itens.get(i) + " " + valores.get(i) + "$");
            this.total += this.valores.get(i);
